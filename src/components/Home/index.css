@@ -1,0 +1,145 @@
+.content-container {
+  display: flex;
+  background-color: #f6f5fb;
+  width: 100%;
+  min-height: 100vh;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+.list-items {
+  display: flex;
+  flex-direction: column;
+}
+.idocs-navigation {
+  position: fixed;
+
+  left: 0;
+  border: 1px solid grey;
+  background-color: #ffffff;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  /* overflow: hidden;
+  overflow-y: scroll; */
+  width: 260px;
+  height: calc(100%);
+  z-index: 1;
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.3s;
+  padding-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .idocs-navigation {
+    width: 120px;
+  }
+}
+.nav-link {
+  position: relative;
+  padding: 6px 30px;
+  line-height: 25px;
+  font-weight: 600;
+  color: black;
+}
+.nav-link:hover {
+  color: #0366d6;
+}
+.nav-item {
+  position: relative;
+}
+.idocs-navigation .nav .nav-item .nav-link.active {
+  font-weight: 700;
+}
+.idocs-navigation > .nav > .nav-item > .nav-link.active:after {
+  position: absolute;
+  content: ' ';
+  top: 50%;
+  right: 18px;
+  border-color: #000;
+  border-top: 2px solid;
+  border-right: 2px solid;
+  width: 7px;
+  height: 7px;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+  transform: translate(-50%, -50%) rotate(45deg);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.idocs-navigation .nav .nav .nav-link {
+  color: #6a6a6a;
+  padding: 4px 30px 4px 45px;
+  font-size: 15px;
+  text-transform: none;
+}
+.idocs-navigation .nav .nav-link {
+  position: relative;
+  padding: 6px 30px;
+  line-height: 25px;
+  font-weight: 600;
+}
+.nav-link {
+  display: block;
+}
+.nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.idocs-content {
+  position: relative;
+  margin-left: 260px;
+  padding: 0px 50px 50px;
+  min-height: 750px;
+  transition: all 0.3s;
+  padding-top: 48px;
+}
+@media (max-width: 768px) {
+  .idocs-content {
+    margin-left: 80px;
+  }
+  .nav-link {
+    font-size: 12px;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #252b33;
+  line-height: 1.5;
+  margin: 0 0 1.5rem 0;
+  font-family: Roboto, sans-serif;
+}
+h3,
+h6 {
+  font-size: 10px;
+}
+.divider {
+  border: none;
+  height: 0.7px;
+  color: gray;
+  background-color: gray;
+}
+section {
+  margin-top: auto;
+  padding-top: 70px;
+  padding-bottom: 5px;
+}
+a {
+  list-style-type: none;
+  text-decoration: none;
+}
+.idocs-content {
+  position: relative;
+  margin-left: 260px;
+  padding: 0px 50px 50px;
+  min-height: 750px;
+  transition: all 0.3s;
+  padding-top: 150px;
+}

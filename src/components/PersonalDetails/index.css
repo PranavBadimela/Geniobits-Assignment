@@ -1,0 +1,82 @@
+.person-details-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  height: 100%;
+  border: 1px solid gray;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 40px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  position: fixed;
+}
+.person-content-container {
+  width: 100%;
+  margin-left: 220px;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 40px;
+  padding-bottom: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  height: 100%;
+}
+.person-logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.person-image {
+  font-size: 90px;
+  color: lightgray;
+  align-self: center;
+  padding: 10px;
+}
+.name {
+  font-size: 20px;
+  align-self: center;
+}
+.items {
+  align-items: flex-start;
+}
+.container1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.input {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.sub-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.container2 {
+  display: flex;
+}
+.select {
+  width: 190px;
+}
+.gender-container {
+  display: flex;
+  flex-direction: row;
+}
+p {
+  font-size: 15px;
+  font-weight: 400;
+  color: gray;
+  font-family: 'Roboto';
+}
+input {
+  outline: none;
+  border: 1px solid gray;
+}
